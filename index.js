@@ -56,11 +56,11 @@ let array = loremIpsum.split(" ");
 const resultB1a = array.length;
 console.log(resultB1a);
 
-const resultB1b = 0;
+let resultB1b = 0;
 for (let i = 0; i < array.length; i++)
 {
     array[i] = array[i].toLowerCase();
-    for (let j = 0; j < array[i]; j++)
+    for (let j = 0; j < array[i].length; j++)
     {
         if(array[i][j] === "e" && array[i][j + 1] === "t")
         {
